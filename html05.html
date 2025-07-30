@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #diva {
+            position: static;
+            width: 400px;
+            height: 400px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding: auto auto;
+        }
+        div:not(#diva) {
+            position: relative;
+            width: 50%;
+            height: 50%;
+        }
+        #div1 {
+            float: left;
+            background-color: lightcoral
+        }
+        #div2 {
+            float: right;
+            background-color: lavender;
+        }
+        #div3 {
+            float: left;
+            background-color: palegreen;
+        }
+        #div4 {
+            float: right;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="diva">
+        <div id="div1">left:0;top:0</div>
+        <div id="div2">right:0;top:0</div>
+        <div id="div3">left:0;bottom:0</div>
+        <div id="div4">right:0;bottom:0</div>
+    </div>
+</body>
+</html>

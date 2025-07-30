@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > * {
+            height: 100px;
+            margin: 10px;
+            background-color: seashell;
+        }
+        #ul1 {
+            border-width: 3px;
+            border-style: solid;
+            border-color: hotpink;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+        }
+        #ul1 > li {
+            display: inline;
+            margin: auto 30px;
+        }
+        #categori {
+            list-style-type: none;
+        }
+        #categori > li {
+            display: block
+        }
+        #left {
+            width: 10%;
+            float: left;
+        }
+        section {
+            width: 70%;
+            height: auto;
+            float: left;
+        }
+        article {
+            width: 300px;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+}
+        #right {
+            width: 10%;
+            float: left;
+        }
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Web Shop</p>
+    </header>
+    <nav>
+        <ul id="ul1">
+            <li>Home</li>
+            <li>About us</li>
+            <li>New</li>
+            <li>My account</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+    <aside id="left">
+        <ul id="categori">
+            <li>Home</li>
+            <li>About us</li>
+            <li>New</li>
+            <li>My account</li>
+            <li>Contacts</li>
+        </ul>
+    </aside>
+    <section style="background-color: green;">
+        <article style="background-color: hotpink;">
+            <div style="width: 100px; height: 100px; background-color: black;"></div>
+            심플하고 슬림한 본체에 코어I5 3470과 지포스 GT630을 장착 CPU: 인텔 코어i5 3470 (아이비브릿지 3세대) 사용<br>가격: 1,200,000원
+        </article>
+        <article style="background-color: red;">
+            <div style="width: 100px; height: 200px; background-color: black;"></div>
+            심플하고 슬림한 본체에 코어I5 3470과 지포스 GT630을 장착 CPU: 인텔 코어i5 3470 (아이비브릿지 3세대) 사용<br>가격: 1,200,000원
+        </article>
+    </section>
+    <aside id="right">
+        <h4>Shopping Cart</h4>
+        <p>현재 쇼핑카트에 물품이 없습니다.</p>
+    </aside>
+    <footer>
+        Copyright (c) 2025 Web Shop
+    </footer>
+</body>
+</html>

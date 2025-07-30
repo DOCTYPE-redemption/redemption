@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:not(#div1) {
+            width: 100px;
+            height: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        div:not(#div2):not(#div-e) {
+            display: inline-block;
+        }
+        div#div1 {
+            width: 1200px;
+            height: 300px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+        }
+        div#div2 {
+            position: fixed;
+            margin: 0px;
+            left: 0px;
+            top: 0px;
+            background-color: green;
+        }
+        div#div3 {
+            background-color: skyblue;
+            
+        }
+        div#div4 {
+            background-color: lavender;
+            
+        }
+        div#div5 {
+            background-color: khaki;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="div-e"></div>
+    <div id="div1">
+        <div id="div2">Fixed Box</div>
+        <div id="div3">First Box</div>
+        <div id="div4">Second Box</div>
+        <div id="div5">Third Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#div1 {
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: moveBox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes moveBox {
+            from {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 500px;
+                top: 0;
+            }
+            50% {
+                left: 500px;
+                top: 500px;
+                width: 200px;
+                height: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 500px;
+            }
+            to {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
