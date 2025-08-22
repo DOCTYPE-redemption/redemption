@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+    background-color: rgb(163, 204, 163);
+}
+
+output {
+    border-radius: auto;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    color: gray;
+}

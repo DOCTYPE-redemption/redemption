@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/2025-08-17/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray_1 = [
+            "Christmas",
+            "Tree",
+            "Good",
+            "Night"
+        ];
+
+        let myArray_2 = new Array();
+        myArray_2[0] = "Christmas";
+        myArray_2[1] = "Tree";
+        myArray_2[2] = "Good";
+        myArray_2[3] = "Night";
+
+        let myArray_3 = Array(
+            "Christmas",
+            "Tree",
+            "Good",
+            "Night"
+        );
+
+        function func1(a) {
+            for (i = 0; i < a.length; i++) {
+                console.log(a[i]);
+            }
+            console.log(".");
+        }
+
+        func1(myArray_1);
+        func1(myArray_2);
+        func1(myArray_3);
+    </script>
+</body>
+</html>

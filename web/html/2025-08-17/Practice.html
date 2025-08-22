@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/2025-08-17/style/style.css">
+    <title>연습문제</title>
+</head>
+<body>
+    <div>
+        <h4>다음에 학습할 내용은 HTML입니다.</h4>
+        <button id="button-id-1">HTML학습을 끝냈으면 이곳을 누르십시오</button>
+    </div>
+    <script>
+        const myButton_1 = document.getElementById("button-id-1");
+
+        function func_1() {
+            myButton_1.textContent = myButton_1.textContent.replace("HTML", "JAVASCRIPT");
+        }
+
+        myButton_1.addEventListener("click", func_1);
+    </script>
+    <script>
+        console.log(Math.floor(Math.random() * 100));
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(weight) {
+                this.weight = weight;
+            }
+        }
+        
+        class Dog extends Animal {
+            constructor(name, adoptedYear, weight) {
+                super(weight);  // super는 this보다 우선되어야 한다@
+                this.name = name;
+                this.adoptedYear = adoptedYear;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.adoptedYear;
+            }
+        }
+
+        let myDog = new Dog("Sally", 2023, 20);
+        document1.write("제 강아지의 이름은" + myDog.name + "이고 나이는" + myDog.age() + "살입니다" + "<br>");
+        document.write("강아지의 체중은 " + + myDog.weight + "입니다");
+
+    </script>
+</body>
+</html>

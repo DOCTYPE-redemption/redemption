@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/2025-08-17/style/style.css">
+    <title>Accumulate Array</title>
+</head>
+<body>
+    <h1>배열에 값을 저장하겠습니다</h1>
+    <div>
+        <fieldset>
+            <form id="form-id-1">
+                <label for="input-id-1"></label>
+                <input type="text" id="input-id-1" name="value" placeholder="value">
+                <button type="submit" id="button-id-1">확인</button><br>
+                <output name="output-name-1">여기입니다</output>
+            </form>
+        </fieldset>
+    </div>
+
+    <script>
+        const myForm = document.getElementById("form-id-1");
+        const myArray = new Array();
+
+        myForm.addEventListener("submit", try_catch);
+
+        function try_catch(event) {
+            event.preventDefault();
+            
+            try {
+                const value_1 = myForm.elements["value"].value;
+                if (value_1) {
+                    myArray.push(value_1);
+                    myForm.elements["output-name-1"].innerHTML = "";
+                    for (let x in myArray) {
+                        myForm.elements["output-name-1"].innerHTML += myArray[x] + "<br>";
+                    }
+                }
+            }
+            catch (error){
+                alert(error);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <link rel="stylesheet" href="../../css/2025-08-17/style/style.css"></style>
+    <script src="../../js/2025-08-17/2025-08-17-string.js" defer></script>
+</head>
+<body>
+    <h1>string객체의 메소드와 속성을 알아보자</h1>
+    <div id="id-div1">
+        <h3>String.length 속성을 알아보자</h3>
+        <p id="id-p1"></p>
+        <script>
+            document.getElementById("id-p1").textContent = "Hello"[2];
+            document.getElementById("id-p1").textContent = "안중요한 내용";
+        </script>
+    </div>
+    <div>
+        <div id="id-div2">
+            <fieldset>
+                <h3>#String1 == String2 문자열 비교를 알아보자 + 대소비교 연산자&lt;,&gt; -> 사전식 연산</h3>
+                <label for="input-2-1">input-2-1:</label>
+                <input type="text" id="input-2-1" placeholder="문자열 비교를 위한 입력1" required><br>
+                <label for="input-2-2">input-2-2:</label>
+                <input type="text" id="input-2-2" placeholder="문자열 비교를 위한 입력2" required><br>
+                <output id="output-2-1">output1 is here</output><br>
+                <output id="output-2-2">output2 is here</output><br>
+                <button id="submit-2-1">제출</button><br>
+                <output id="output-2-3">output3 is here</output>
+            </fieldset>
+        </div>
+    </div>
+    <div id="id-div-3">
+        <fieldset>
+            <h3>#String.concat() 메소드를 알아보자</h3>
+            <input type="text" id="id-input-3-1" required placeholder="입력1"><br>
+            <input type="text" id="id-input-3-2" required placeholder="입력2"><br>
+            <button id="id-button-3">확인</button>
+            <output id="id-output-3">.concat()의 결과가 이곳에 출력됩니다</output>
+        </fieldset>
+    </div>
+    <div id="id-div-4">
+        <fieldset>
+            <h3>#String.indexOf() 메소드를 알아보자</h3>
+            <input type="text" id="id-input-4-1" required placeholder="String"><br>
+            <input type="text" id="id-input-4-2" required placeholder="index"><br>
+            <button id="id-button-4-1">확인</button><br>
+            <output id="id-output-4-1">String.indexOf()의 결과가 이곳에 출력됩니다</output>
+        </fieldset>
+    </div>
+    <div id="id-div-5">
+        <form id="id-form-5">
+            <fieldset>
+                <h3>#String.substring()</h3>
+                <p>필요한 부분의 문자열만 뽑아온다</p>
+                <input type="text" id="id-input-5-1" name="name-input-5-1" required placeholder="String">
+                <div>
+                    <input type="radio" name="name-radio-5">기다리기 힘들어1<br>
+                </div>
+                <div>
+                    <input type="radio" name="name-radio-5">기다리기 힘들어2<br>
+                </div>
+                <button type="submit">제출</button><br>
+                <output id="id-output-5-1" name="name-output-5-1">이곳이 출력입니다</output>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form id="id-form-6">
+            <fieldset>
+                <h3>#String.match()</h3>
+                <input name="name-input-6-1" required placeholder="String"><br>
+                <input name="name-input-6-2" required placeholder="regular expression"><br>
+                <output name="name-output-6-1" readonly>결과</output>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <fieldset>
+            <form id="id-form-7">
+                <h3>#String.replace()</h3>
+                <input name="name-input-7-1" required placeholder="String"><br>
+                <input name="name-input-7-2" required placeholder="dest regular expression"><br>
+                <input name="name-input-7-3" required placeholder="src regular expression"><br>
+                <output name="name-output-7-1" readonly>결과</output>
+            </form>
+        </fieldset>
+    </div>
+    <p id="id-p-8">여기</p>
+    <script>
+        let a = "hello,world!, night good";
+        document.getElementById("id-p-8").textContent = a.split(' ')[1];
+    </script>
+
+    <p id="id-p-9">여기</p>
+    <script>
+        let b = "hello,world!, night good";
+        document.getElementById("id-p-9").textContent = b.startsWith("helo,");
+    </script>
+
+    <p id="id-p-10">여기</p>
+    <script>
+        let c = "hello,world!, night good ";
+        document.getElementById("id-p-10").textContent = c.trim();
+    </script>
+    <p id="id-p-11">숫자</p>
+    <script>
+        let d = "09";
+        document.getElementById("id-p-11").textContent = parseInt(d);
+    </script>
+    <p id="id-p-12">eval() 함수</p>
+    <p id="id-p-12-1">eval() 함수</p>
+    <script>
+        let tmp_12 = 10;
+        let e = "tmp_12 = 21";
+        document.getElementById("id-p-12-1").innerHTML = e_2(e);
+    </script>
+</body>
+</html>

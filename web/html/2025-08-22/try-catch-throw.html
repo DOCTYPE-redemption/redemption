@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/2025-08-17/style/style.css">
+    <style>
+        input[type=text] {
+            background-color: white;
+        }
+        button#button-id-1 {
+            background-color: mintcream;
+        }
+    </style>
+    <title>Guessing Nubmer</title>
+</head>
+<body>
+    <h1>Guessing Number</h1>
+    <div>
+        <fieldset>
+            <form id="form-id-1">
+                <label for="input-id-1"></label>
+                <input type="text" id="input-id-1" name="name" placeholder="number">
+                <button type="submit" id="button-id-1">확인</button>
+            </form>
+        </fieldset>
+    </div>
+
+    <script>
+        const myForm = document.getElementById("form-id-1");
+
+        myForm.addEventListener("submit", try_catch);
+
+        function try_catch(event) {
+            event.preventDefault();
+            try {
+                const name = myForm.elements["name"].value;
+                if (!name) throw "입력하시오";
+                else if (isNaN(name)) throw "숫자가 아입니더";
+            }
+            catch (error){
+                alert(error);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id="p-id-1">p is here</p>
+    <script>
+        const myArray = new Array();
+        
+        myArray[0] = 'H';
+        myArray[1] = 'e';
+        myArray[2] = "llo";
+
+        document.getElementById("p-id-1").textContent = '';
+
+        let a_1 = new String;
+        
+        for (i = 0; i < myArray.length; i++) {
+            document.getElementById("p-id-1").textContent += myArray[i];
+            a_1 += myArray[i];
+        }
+
+        console.log(a_1);
+    </script>
+</body>
+</html>
